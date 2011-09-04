@@ -9,7 +9,7 @@ commands for your editing pleasure.
 In your shell:
 
     cd ~/.emacs.d/vendor
-    curl -O https://github.com/mustache/emacs/raw/master/mustache-mode.el
+    curl --location -O https://github.com/mustache/emacs/raw/master/mustache-mode.el
 
 In your Emacs config:
 
