@@ -91,6 +91,9 @@
 (defconst mustache-mode-variable (concat "\\({{\s*"
                                     mustache-mode-mustache-token
                                     "\s*}}\\)"))
+(defconst mustache-mode-variable (concat "\\({{{?\s*"
+                                    mustache-mode-mustache-token
+                                    "\s*}}}?\\)"))
 (defconst mustache-mode-builtins
   (concat
    "\\({{\\<\s*"
