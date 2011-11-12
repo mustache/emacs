@@ -13,5 +13,5 @@ In your shell:
 
 In your Emacs config:
 
-    (add-to-list 'load-path "~/.emacs.d/vendor/mustache-mode.el")
+    (add-to-list 'load-path "~/.emacs.d/vendor")
     (require 'mustache-mode)
