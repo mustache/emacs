@@ -246,6 +246,7 @@
   (set (make-local-variable 'font-lock-defaults) '(mustache-mode-font-lock-keywords)))
 
 (add-to-list 'auto-mode-alist '("\\.mustache$" . mustache-mode))
+(add-to-list 'auto-mode-alist '("\\.hbs$" . mustache-mode))
 
 (provide 'mustache-mode)
 
