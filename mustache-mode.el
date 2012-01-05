@@ -83,8 +83,7 @@
 (defconst mustache-mode-close-section (concat "{{/\\(\s*"
                                          mustache-mode-mustache-token
                                          "\s*\\)}}"))
-;; TODO(tonyg) Figure out a way to support multiline comments.
-(defconst mustache-mode-comment "\\({{!.*?}}\\)")
+(defconst mustache-mode-comment "\\({{!\\(?:.\\|\n\\)*?}}\\)")
 (defconst mustache-mode-include (concat "\\({{[><]\s*"
                                    mustache-mode-mustache-token
                                    "\s*}}\\)"))
@@ -246,6 +245,7 @@
   (set (make-local-variable 'font-lock-defaults) '(mustache-mode-font-lock-keywords)))
 
 (add-to-list 'auto-mode-alist '("\\.mustache$" . mustache-mode))
+(add-to-list 'auto-mode-alist '("\\.hbs$" . mustache-mode))
 
 (provide 'mustache-mode)
 
