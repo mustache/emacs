@@ -4,7 +4,7 @@
 ;;       Chris Wanstrath
 ;;       Daniel Hackney
 
-;; Version: 1.2
+;; Version: 1.3
 
 ;; This file is not part of Emacs
 
@@ -47,7 +47,7 @@
 (eval-when-compile
   (require 'font-lock))
 
-(defvar mustache-mode-version "1.2"
+(defvar mustache-mode-version "1.3"
   "Version of `mustache-mode.el'.")
 
 (defvar mustache-mode-map
