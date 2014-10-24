@@ -77,8 +77,8 @@
 (defconst mustache-mode-section (concat "\\({{[#^/]\s*"
                                    mustache-mode-mustache-token
                                    "\s*}}\\)"))
-(defconst mustache-mode-open-section (concat "\\({{#\s*"
-                                        mustache-mode-mustache-token
+(defconst mustache-mode-open-section (concat "\\({{[#^]\s*"
+                                             mustache-mode-mustache-token
                                         "\s*}}\\)"))
 (defconst mustache-mode-close-section (concat "{{/\\(\s*"
                                          mustache-mode-mustache-token
