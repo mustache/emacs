@@ -238,13 +238,14 @@
     (,(concat "<\\(" mustache-mode-standalone-tag "\\)") (1 font-lock-function-name-face))
     (,mustache-mode-html-constant (1 font-lock-variable-name-face))))
 
+;;;###autoload (add-to-list 'auto-mode-alist '("\\.mst\\'" . mustache-mode))
+;;;###autoload (add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
+
 ;;;###autoload
 (define-derived-mode mustache-mode fundamental-mode "Mustache"
   (set (make-local-variable 'indent-line-function) 'mustache-indent)
   (set (make-local-variable 'indent-tabs-mode) nil)
   (set (make-local-variable 'font-lock-defaults) '(mustache-mode-font-lock-keywords)))
-
-(add-to-list 'auto-mode-alist '("\\.mustache$" . mustache-mode))
 
 (provide 'mustache-mode)
 
